@@ -1,8 +1,8 @@
 ball = Math.floor(Math.random() * 10);
 if(ball==1){
-  console.log("Yes - definitely.");
+ ("Yes - definitely.");
 } else if (ball==2){
-  console.log("It is decidedly so.");
+  document.write("It is decidedly so.");
 } else if (ball==3){
   console.log("Without a doubt.");
 } else if (ball==4){
