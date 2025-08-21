@@ -1,5 +1,5 @@
  let ball = Math.floor(Math.random() * 10);
- let answer = document.write;
+ let answer = (document.write);
 answer ==("<h1>" + response + "</h1>");
 if(ball==1){
  answer ==("Yes - definitely.");
