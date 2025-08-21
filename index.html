@@ -4,8 +4,7 @@
     <p>Let me test your fortune</p>
     <head>
     <style>
-      body {
-        display: flex;
+display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -24,24 +23,27 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 0 20px rgba(0,0,0,0.8);
+        box-shadow: 0 0 25px rgba(0,0,0,0.8);
         position: relative;
       }
 
-      /* Blue triangle window */
+      /* Blue glowing triangle */
       .window {
         width: 0;
         height: 0;
         border-left: 70px solid transparent;
         border-right: 70px solid transparent;
-        border-bottom: 120px solid #1a73e8;
+        border-bottom: 120px solid;
+        border-bottom-color: #1a73e8;
+        border-image: linear-gradient(to bottom, #4dabf7, #0d47a1) 1;
+        filter: drop-shadow(0 0 12px #1a73e8);
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
       }
 
-      /* Answer text inside the triangle */
+      /* Answer text inside */
       .window p {
         position: absolute;
         top: 35%;
@@ -49,7 +51,8 @@
         text-align: center;
         font-size: 12px;
         font-weight: bold;
-        color: white;
+        color: #e0f0ff;
+        text-shadow: 0 0 5px #1a73e8, 0 0 10px #0d47a1;
       }
 
       button {
@@ -61,10 +64,12 @@
         color: white;
         font-size: 16px;
         cursor: pointer;
+        transition: 0.2s;
       }
 
       button:hover {
         background: #0d47a1;
+        box-shadow: 0 0 10px #1a73e8;
       }
     </style>
   </head>
