@@ -89,7 +89,6 @@ body {
       }
     </style>
   </head>
-  <button type="button" onclick="displayAnswer()">Click me!</button>
     <p id="answer"></p>
     <div class="ball">
       <div class="window">
@@ -129,6 +128,11 @@ body {
         }
 
         document.getElementById("answer").innerHTML = response;
+        triangle.style.transform = "rotate(360deg)";
+
+        // Reset rotation after animation so it can spin again
+        setTimeout(() => {
+          triangle.style.transform = "rotate(0deg)";
       }
     </script>
   </body>
