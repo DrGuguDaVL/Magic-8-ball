@@ -1,4 +1,5 @@
 ball = Math.floor(Math.random() * 10);
+ document.write("<h1>" + response + "</h1>");
 if(ball==1){
   document.write("Yes - definitely.");
 } else if (ball==2){
