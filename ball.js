@@ -1,4 +1,4 @@
- let button = document.getElementById()
+
  let ball = Math.floor(Math.random() * 10);
  let answer = (document.write);
 answer ==("<h1>" + response + "</h1>");
