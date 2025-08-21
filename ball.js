@@ -1,20 +1,20 @@
 ball = Math.floor(Math.random() * 10);
 if(ball==1){
- ("Yes - definitely.");
+  document.write("Yes - definitely.");
 } else if (ball==2){
   document.write("It is decidedly so.");
 } else if (ball==3){
-  console.log("Without a doubt.");
+  document.write("Without a doubt.");
 } else if (ball==4){
-  console.log("Reply hazy, try again.");
+  document.write("Reply hazy, try again.");
 } else if (ball==5){
-  console.log("Ask again later.");
+  document.write("Ask again later.");
 } else if (ball==6){
-  console.log("Better not tell you now.");
+  document.write("Better not tell you now.");
 } else if (ball==7){
-  console.log("My sources say no.");
+  document.write("My sources say no.");
 } else if (ball==8){
-  console.log("Outlook not so good.");
+  document.write("Outlook not so good.");
 } else if (ball==9){
-  console.log("Very doubtful.");
+  document.write("Very doubtful.");
 }
