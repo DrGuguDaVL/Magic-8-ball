@@ -4,7 +4,8 @@
     <p>Let me test your fortune</p>
     <head>
     <style>
-display: flex;
+body {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -55,8 +56,23 @@ display: flex;
         text-shadow: 0 0 5px #1a73e8, 0 0 10px #0d47a1;
       }
 
-      button {
+      /* Input & button */
+      .controls {
         margin-top: 20px;
+        display: flex;
+        gap: 10px;
+      }
+
+      input {
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        width: 200px;
+        font-size: 14px;
+      }
+
+      button {
         padding: 10px 20px;
         border: none;
         border-radius: 8px;
@@ -75,6 +91,16 @@ display: flex;
   </head>
   <button type="button" onclick="displayAnswer()">Click me!</button>
     <p id="answer"></p>
+    <div class="ball">
+      <div class="window">
+        <p id="answer">?</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <input type="text" id="question" placeholder="Type your question...">
+      <button onclick="displayAnswer()">Ask</button>
+    </div>
 
     <script>
       function displayAnswer() {
