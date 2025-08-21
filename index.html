@@ -4,9 +4,35 @@
 <p id="answer"></p>
 
 <script>
-function displayAnswer() {
-    document.getElementById(document.write).innerHTML = "d";
-}
+document.getElementById("eightBall").addEventListener("click", function() {
+      let ball = Math.floor(Math.random() * 10); // gives 0-9
+      let response = "";
+
+      if(ball === 1){
+        response = "Yes - definitely.";
+      } else if (ball === 2){
+        response = "It is decidedly so.";
+      } else if (ball === 3){
+        response = "Without a doubt.";
+      } else if (ball === 4){
+        response = "Reply hazy, try again.";
+      } else if (ball === 5){
+        response = "Ask again later.";
+      } else if (ball === 6){
+        response = "Better not tell you now.";
+      } else if (ball === 7){
+        response = "My sources say no.";
+      } else if (ball === 8){
+        response = "Outlook not so good.";
+      } else if (ball === 9){
+        response = "Very doubtful.";
+      } else {
+        response = "Try again!";
+      }
+
+      document.getElementById("answer").textContent = response;
+    });
+
 </script>
 </body>
 </html>
