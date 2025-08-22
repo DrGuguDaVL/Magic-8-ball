@@ -39,69 +39,65 @@ function displayAnswer() {
         position: relative;
       }
 
-      /* Blue glowing triangle */
-      .window {
-        width: 0;
-        height: 0;
-        border-left: 70px solid transparent;
-        border-right: 70px solid transparent;
-        border-bottom: 120px solid;
-        border-bottom-color: #1a73e8;
-        border-image: linear-gradient(to bottom, #4dabf7, #0d47a1) 1;
-        filter: drop-shadow(0 0 12px #1a73e8);
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: rotate(0deg);
-        transition: transform 1s ease-in-out;
-      }
+     .window {
+      width: 0;
+      height: 0;
+      border-left: 70px solid transparent;
+      border-right: 70px solid transparent;
+      border-bottom: 120px solid #1a73e8;
+      filter: drop-shadow(0 0 12px #1a73e8);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotate(0deg);
+      transition: transform 1s ease-in-out;
+    }
 
-      /* Answer text inside */
-      .window p {
-        position: absolute;
-        top: 35%;
-        width: 100px;
-        text-align: center;
-        font-size: 12px;
-        font-weight: bold;
-        color: #e0f0ff;
-        text-shadow: 0 0 5px #1a73e8, 0 0 10px #0d47a1;
-        opacity: 0; /* hidden at first */
-        transition: opacity 0.5s ease-in;
-      }
+    /* Answer inside triangle */
+    .window p {
+      position: absolute;
+      top: 35%;
+      width: 100px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      color: #e0f0ff;
+      text-shadow: 0 0 5px #1a73e8, 0 0 10px #0d47a1;
+      opacity: 1;
+    }
 
-      /* Input & button */
-      .controls {
-        margin-top: 20px;
-        display: flex;
-        gap: 10px;
-      }
+    /* Input and button */
+    .controls {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
 
-      input {
-        padding: 10px;
-        border-radius: 8px;
-        border: none;
-        outline: none;
-        width: 200px;
-        font-size: 14px;
-      }
+    input {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      width: 200px;
+      font-size: 14px;
+    }
 
-      button {
-        padding: 10px 20px;
-        border: none;
-        border-radius: 8px;
-        background: #1a73e8;
-        color: white;
-        font-size: 16px;
-        cursor: pointer;
-        transition: 0.2s;
-      }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #1a73e8;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
 
-      button:hover {
-        background: #0d47a1;
-        box-shadow: 0 0 10px #1a73e8;
-      }
+    button:hover {
+      background: #0d47a1;
+      box-shadow: 0 0 10px #1a73e8;
+    }
     </style>
   </head>
     <p id="answer"></p>
