@@ -22,23 +22,6 @@ body {
         position: relative;
       }
 
-      /* Blue window */
-      .window {
-        width: 120px;
-        height: 120px;
-        background: radial-gradient(circle at top left, #1a73e8, #0d47a1);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 10px;
-        color: white;
-        font-size: 14px;
-        line-height: 1.2em;
-        font-weight: bold;
-      }
-
       button {
         margin-top: 20px;
         padding: 10px 20px;
