@@ -21,18 +21,3 @@ body {
         box-shadow: 0 0 20px rgba(0,0,0,0.8);
         position: relative;
       }
-
-      button {
-        margin-top: 20px;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 8px;
-        background: #1a73e8;
-        color: white;
-        font-size: 16px;
-        cursor: pointer;
-      }
-
-      button:hover {
-        background: #0d47a1;
-      }
