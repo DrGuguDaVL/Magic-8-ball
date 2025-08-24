@@ -28,35 +28,28 @@
       position: relative;
     }
 
-    .window {
-      width: 0;
-      height: 0;
-      border-left: 70px solid transparent;
-      border-right: 70px solid transparent;
-      border-bottom: 120px solid #1a73e8;
-      filter: drop-shadow(0 0 12px #1a73e8);
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transform: rotate(0deg);
-      transition: transform 1s ease-in-out;
-    }
+.window {
+  width: 140px;
+  height: 120px;
+  background: #1a73e8;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 12px #1a73e8);
+  transition: transform 1s ease-in-out;
+}
 
 .window p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
   text-align: center;
   font-size: 14px;
   font-weight: bold;
   color: #e0f0ff;
   text-shadow: 0 0 5px #1a73e8, 0 0 10px #0d47a1;
-  opacity: 1;
-  pointer-events: none; /* optional: prevents clicks on text */
+  padding: 10px;
+  margin: 0;
 }
+
 
 
     .controls {
