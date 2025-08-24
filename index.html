@@ -139,13 +139,9 @@ function displayAnswer() {
   textElement.innerText = response;
 textElement.innerHTML = response.replace(/\n/g, '<br>');
 
-  // Spin the triangle
-  triangle.style.transform = "rotate(360deg)";
-
-  // Reset rotation for next spin
-  setTimeout(() => {
-    triangle.style.transform = "rotate(0deg)";
-  }, 1000);
+   triangle.style.animation = "none"; // reset animation
+  void triangle.offsetWidth; // force reflow
+  triangle.style.animation = "popAnswer 0.6s ease-in-out";
 }
 </script>
 
