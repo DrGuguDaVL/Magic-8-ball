@@ -151,35 +151,7 @@
   <button onclick="displayAnswer()">Ask</button>
 </div>
 
-<script src="ball.js">
-function displayAnswer() {
-  let triangle = document.getElementById("triangle");
-  let textElement = document.getElementById("triangleText");
-
-  const answers = [
-    "Yes - definitely.",
-    "It is decidedly so.",
-    "Without a doubt.",
-    "Reply hazy, try again.",
-    "Ask again later.",
-    "Better not tell you now.",
-    "My sources say no.",
-    "Outlook not so good.",
-    "Very doubtful."
-  ];
-
-  let randomIndex = Math.floor(Math.random() * answers.length);
-  let response = answers[randomIndex];
-
-
-  textElement.innerText = response;
-textElement.innerHTML = response.replace(/\n/g, '<br>');
-
-   triangle.style.animation = "none"; // reset animation
-  void triangle.offsetWidth; // force reflow
-  triangle.style.animation = "popAnswer 0.6s ease-in-out";
-}
-</script>
+<script src="ball.js"></script>
 
 </body>
 </html>
