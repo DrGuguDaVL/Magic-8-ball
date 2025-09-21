@@ -38,5 +38,5 @@ function displayAnswer() {
     // Reset rotation after animation so it can spin again
     setTimeout(() => {
         triangle.style.transform = "rotate(0deg)";
-    }, 1000); // Add duration in milliseconds
+    }, 1000); /*Add duration in milliseconds*/
 }
