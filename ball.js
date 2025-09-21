@@ -2,8 +2,8 @@ function displayAnswer() {
 // generate random number between 1 and 9
 let triangle = document.getElementById("triangle");
 let ball = Math.floor(Math.random() * 9) + 1;
-let response = ;
-
+let response = document.getElementsById("answer").innerHTML;
+}
 if (ball == 1) {
 response = "Yes - definitely.";
 } else if (ball == 2) {
